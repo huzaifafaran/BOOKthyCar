@@ -1,0 +1,288 @@
+
+/* .section{
+    background: rgb(5, 4, 24);
+} */
+.hero__subtitle img{
+width: 2.3rem;
+height: 2.3rem;
+}
+
+.hero__content{
+    font-size: 3.2rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    color: var(--heading-color);
+}
+
+.hero__content h1 .highlight{
+    color: var(--secondary-color);
+}
+
+.hero__content p{
+    font-size: 1.1rem;
+    color: var(--text-color);
+    line-height: 2rem;
+    font-weight: 450;
+}
+
+.hero__img-box img, .hero__img-box video{
+    width: 100%;
+    height: 35vh;
+    border-radius: 20px;
+    border: none;
+    object-fit: cover;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero__img-box img:hover, .hero__img-box video:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+}
+
+
+.hero__content{
+    padding-top: 3.5rem;
+}
+
+.hero__img-box{
+    padding-top: 2rem;
+}
+
+
+.services__subtitle{
+    font-size:2.2rem;
+    font-weight:500;
+    color: #ee6e6e;
+    font-family: var(--subtitle-font-name);
+    
+}
+
+.services__title{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+
+.featured__tour-title{
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+
+
+.experience__content h2{
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    font-weight: 500;
+
+}
+
+.experience__content p{
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin-top: 1rem;
+}
+
+.counter__wrapper{
+    margin-top: 2.5rem;
+}
+
+.counter__box span{
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 10px 5px 10px 5px;
+}
+
+.counter__box h6{
+    font-size: 1.1rem;
+    margin-top: 0.7rem;
+    color: var(--text-color);
+
+}
+
+.experience__img img{
+    width: 90%;
+}
+
+
+
+.gallery__title{
+    font-size: 2.3rem;
+    margin-bottom: 2.5rem;
+    margin-top: 1rem;
+}
+
+.masonry__img{
+    transition: .3s;
+}
+
+.masonry__img:hover{
+    transform: scale(1.1);
+}
+
+.testimonial__title{
+    font-size: 2.3rem;
+    margin-top: 1rem;
+}
+.testimonial{
+    color: rgb(182, 176, 214);
+}
+
+.newsletter {
+    
+    background: #fa4e57;
+    padding: 0;
+    margin-top: 3rem;
+    position: relative; /* Ensure relative positioning for absolute children */
+    overflow: hidden; /* Prevent unwanted overflow */
+}
+
+.newsletter__content {
+    padding: 50px;
+    position: relative;
+    z-index: 2; /* Ensures text appears above the image */
+}
+
+.newsletter__img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.newsletter__img img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.newsletter__content h2{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.newsletter__input{
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
+
+.newsletter__input input{
+
+    border: none;
+    font-size: 1rem;
+    color: rgb(57, 55, 77);
+}
+
+.newsletter__input:focus{
+    outline: none;
+}
+
+.newsletter__btn{
+    padding: 0.5rem 1.5rem !important;
+    background: var(--secondary-color) !important;
+    color: #fff;
+    font-size: 1.1rem !important;
+}
+.newsletter__btn btn{
+    
+    color: #fff;
+}
+
+.newsletter__content p{
+    color: var(--heading-color);
+    font-size: 1.1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    .newsletter__content {
+      padding: 30px 20px;
+      text-align: center;
+    }
+  
+    .newsletter__img {
+      position: relative;
+      margin-top: 2rem;
+      text-align: center;
+    }
+  
+    .newsletter__content h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+    }
+  
+    .newsletter__input {
+      flex-direction: column;
+      gap: 1rem;
+      padding: 0.8rem;
+    }
+  
+    .newsletter__input input {
+      width: 100%;
+      padding: 0.8rem;
+      text-align: center;
+    }
+  
+    .newsletter__btn {
+      width: 100%;
+      padding: 0.8rem !important;
+    }
+  
+    .newsletter__content p {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  
+    /* Adjust Bootstrap grid for mobile */
+    .newsletter .row {
+      flex-direction: column;
+    }
+  
+    .newsletter .row > [class^="col-"] {
+      width: 100%;
+      max-width: 100%;
+    }
+  
+    .newsletter__img img {
+      max-height: 300px;
+      margin: 0 auto;
+    }
+  }
+
+
+
+
+
+
+
+
+  .section__subtitle{
+    color: var(--subtitle-color);
+  }

@@ -1,0 +1,128 @@
+.header{
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+}
+.dabba{
+    margin-top: 2vh;
+}
+.logo img{
+    width: 30%;
+}
+
+.menu{
+    margin-bottom: 0;
+}
+
+.nav__item a{
+    text-decoration: none;
+    color: var(--heading-color);
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.nav__item a:hover{
+    color: inherit;
+}
+
+.nav__item a.active_link{
+    color: var(--secondary-color);
+}
+
+.mobile__menu{
+    font-size: 1.3rem;
+    color: var(--heading-color);
+    display: none;
+}
+
+.sticky__header{
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    background: #111926;
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: 3px 3px 8px -3px #394d6b;
+    z-index: 999;
+}
+
+/* Mobile Menu Styles */
+.mobile__menu {
+    font-size: 1.8rem;
+    color: var(--heading-color);
+    cursor: pointer;
+    display: none;
+  }
+  
+  .mobile__menu__overlay {
+    position: fixed;
+    top: 80px;
+    right: -100%;
+    width: 100%;
+    height: calc(100vh - 80px);
+    background: rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease-in-out;
+    z-index: 999;
+  }
+  
+  .mobile__menu__overlay.active {
+    right: 0;
+  }
+  
+  .mobile__menu__content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background: #fff;
+    padding: 30px 20px;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .mobile__nav__links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .mobile__nav__links .nav__item {
+    margin-bottom: 20px;
+  }
+  
+  .mobile__nav__links .nav__item a {
+    font-size: 1.2rem;
+    color: var(--heading-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .mobile__nav__links .nav__item a:hover {
+    color: var(--secondary-color);
+  }
+  
+  .mobile__nav__btns {
+    margin-top: 30px;
+  }
+  
+  /* Responsive Styles */
+  @media only screen and (max-width: 992px) {
+    .navigation,
+    .nav__right .nav__btns {
+      display: none !important;
+    }
+  
+    .mobile__menu {
+      display: block;
+    }
+  
+    .logo img {
+      width: 50%;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .mobile__menu__content {
+      width: 250px;
+    }
+  }

@@ -1,0 +1,133 @@
+.footer{
+    padding-top: 70px;
+    padding-bottom: 30px;
+    
+}
+ListGroup{
+  background:#111926 ;
+}
+.footer .logo img{
+    width: 50%;
+    margin-bottom: 1rem;
+}
+
+
+.footer .logo p{
+    color: var(--text-color);
+
+}
+
+.social__links span a{
+    text-decoration: none;
+    color: var(--heading-color);
+    font-size: 1.2rem;
+}
+
+.footer__link-title{
+    color: var(--heading-color);
+    margin-bottom: 1rem;
+}
+
+.footer__quick-links{
+  background: #111926;
+}
+
+.footer__quick-links li a {
+    
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.1rem;
+}
+
+.footer__quick-links h6 span i{
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+
+}
+
+
+.copyright{
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.footer__quick-links li{
+  background-color: #111926;
+  text-decoration: none;
+}
+.boxes{
+  margin-top: 2vh;
+}
+
+
+.footer__quick-links2 li{
+  background-color: #111926;
+}
+
+
+.footer__quick-links2 li a {
+    
+  text-decoration: none;
+  color: rgb(247, 148, 148);
+  font-size: 1.1rem;
+}
+
+/* Mobile responsive styles */
+/* Mobile responsive styles */
+@media only screen and (max-width: 768px) {
+    .footer {
+      padding-top: 40px;
+      padding-bottom: 20px;
+    }
+  
+    .footer .logo img {
+      width: 40%;
+      margin-bottom: 0.5rem;
+    }
+  
+    .footer__link-title {
+      margin-bottom: 0.75rem;
+      font-size: 1.1rem;
+    }
+  
+    .footer__quick-links li a,
+    .footer__quick-links2 li a {
+      font-size: 0.95rem;
+    }
+  
+    .social__links span a {
+      font-size: 1rem;
+    }
+  
+    /* Stack columns vertically */
+    .footer .row > [class^="col-"] {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+  
+    /* Contact info adjustments */
+    .footer__quick-links .list-group-item {
+      flex-direction: column;
+      align-items: flex-start !important;
+      padding-left: 0;
+    }
+  
+    .footer__quick-links h6 {
+      margin-bottom: 0.25rem;
+    }
+  
+    .footer__quick-links p {
+      margin-left: 0 !important;
+      font-size: 0.9rem;
+    }
+  
+    .copyright {
+      font-size: 0.85rem;
+      padding: 0 1rem;
+    }
+  
+    /* Center social links on mobile */
+    .social__links {
+      justify-content: center;
+    }
+  }
