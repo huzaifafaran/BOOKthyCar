@@ -48,4 +48,4 @@ To run the project locally, follow these steps:
 This is a practice project, but feel free to fork and improve it!
 
 ## 📄 License
-This project licensed under MIT.
+This project is licensed under MIT.
